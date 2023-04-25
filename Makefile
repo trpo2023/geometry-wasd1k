@@ -1,2 +1,5 @@
-all:
-	gcc -Wall -Werror -o main main.c
+main: geometry.c
+	gcc -Wall -Werror -o geometry geometry.c
+
+run: geometry
+	./geometry
